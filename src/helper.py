@@ -20,7 +20,7 @@ def send_failure_email(error_message, add_message=None):
     """This will send and email to an SNS topic about a Lambda Function Failure
 
     Args:
-        error_message (str): Error message the was produced by the Lambda Function
+        error_message (str): Error message that was produced by the Lambda Function
         add_message (str) [optional]: Any additional data that would be added to the Email
 
     Returns:
