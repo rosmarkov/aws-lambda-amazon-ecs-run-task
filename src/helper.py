@@ -132,7 +132,7 @@ def validate_ecs_run_task_info(ecs_info: dict):
     Returns:
         :obj:`json`: Returns json object (dict) of the ECS information
     """
-    logger.info("Validating SQS Message contains all the needed information to execution ECS Task")
+    logger.info("Validating SQS Message contains all the needed information to execute ECS Task")
     required_net_keys = {
         "subnets": ecs_info.get('networkConfiguration', {}).get('awsvpcConfiguration', {}).get('subnets'),
         "securityGroups": ecs_info.get('networkConfiguration', {}).get('awsvpcConfiguration', {}).get('securityGroups')
